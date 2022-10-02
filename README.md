@@ -2,14 +2,14 @@
 
 ## Problem Statment
 * While supporting design/ deployment and operations of NFVI solutions with multiple customers I had extensive hands on experience with SRIOV.
-* The need was obvious, that Communication service provider always have work loads which require real time throughput, which requires bypassing the (Qemu emulation of network devices) and have direct networking capabilities inside VNFs via SRIOV VFs. 
+* The need was obvious, that Communication service provider always have work loads which require real time throughput, thus demand to bypass the (Qemu emulation of network devices) and have direct networking capabilities inside VNFs via SRIOV VFs. 
 * During recent learning endeavours to prepare a NFVI solution based on K8s cluster running on bare metals  I  faced a challenge on how to extending SRIOV VFs to K8s pods / containers as it was relatively easy to extend SRIOV VFs to Openstack VMs.
 ## Solution
 * SRIOV CNI  solves the above described problem, but there were  many questions e.g. 
-  - How a VF can be extended to a Container / POD.
-  - How  to do traffic segregation via  separate VLANs  and on  each VF.
-* As high rises are always made of small and basic building blocks so I focused on above 2 questions and found their answers. 
-* At high level solution would be
+  - How a SRIOV VF can be extended to a Container / POD.
+  - How  to do traffic segregation via  separate VLANs  and on  each SRIOV VF.
+* As high rises are always made of small and basic building blocks so I focused on above 2 questions and found their answers which is further described in this wiki. 
+* At high level solution would be:-
   - Enable the SRIOV functionality on bare metal server. 
   - To enable SRIOV on supported NICs.
   - Create required number of virtual functions (VFs) over SRIOV supported NIC.
