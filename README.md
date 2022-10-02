@@ -195,7 +195,7 @@ Ethernet-switching table: 2 unicast entries
   SRIOV_201         de:bb:04:86:b8:36 Learn          0 ge-0/0/1.0
 
 
-fabric-switch> show arp no-resolve | grep 192.168.200
+show arp no-resolve | grep 192.168.200
 9a:88:8c:f7:bf:de 192.168.200.2   vlan.200             none 
 show arp no-resolve | grep 192.168.201
 de:bb:04:86:b8:36 192.168.201.2   vlan.201             none
