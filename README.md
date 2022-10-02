@@ -172,7 +172,7 @@ PING 192.168.201.1 (192.168.201.1): 56 data bytes
 64 bytes from 192.168.201.1: seq=0 ttl=64 time=3.310 ms
 
 
-ocker exec -it test-201 arp -a
+docker exec -it test-201 arp -a
 ? (192.168.201.1) at ac:4b:c8:2b:77:c1 [ether]  on eth1
 ? (192.168.201.1) at ac:4b:c8:2b:77:c1 [ether]  on eth1
 root@worker2:~# docker exec -it test-200 arp -a
