@@ -11,7 +11,6 @@
 * As high rises are always made of small and basic building blocks so I focused on above 2 questions and found their answers which is further described in this wiki. 
 * At high level solution would be:-
   - Enable the SRIOV functionality on bare metal server. 
-  - To enable SRIOV on supported NICs.
   - Create required number of virtual functions (VFs) over SRIOV supported NIC.
   - Move the SRIOV VF to running container's namespace and attach it with the running container.
 ![SRIOV_VFs_inside_Containers](./images/SRIOV_VFs_inside_Containers.jpg)
